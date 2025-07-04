@@ -1,0 +1,4 @@
+h1{
+    background-color: blueviolet;
+}
+/* this is external css. rather than writing style attributes in html file .we write it in a css file and link it using link tag in html .by using this we can make our html code more readable.also makes our codes appear shorter. */

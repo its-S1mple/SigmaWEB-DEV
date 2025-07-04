@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
+    </head>
+    <!-- element Selectors -->
+    <style>
+    div{
+        background-color: aqua;
+    }
+</style>
+    <!-- class Selectors -->
+    <style>
+    .mango{
+        color: green;
+        background-color: yellow;
+    }
+</style>
+    <!-- id Selectors -->
+    <style>
+    #green{
+        color: red;
+        background-color: green;
+    }
+</style>
+    <!-- child Selectors -->
+    <style>
+    div > p{
+        color: aqua;
+        background-color: rgb(39, 206, 70);
+    }
+</style>
+    <!-- descended Selectors -->
+    <style>
+    div p{
+        
+        color: rgb(221, 45, 66);
+    }
+</style>
+    <!-- universal Selectors -->
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+    <!-- psuedo Selectors -->
+    <style>
+    a:visited{
+        color: black;
+    }
+    a:link{
+        color:green;
+    }
+    a:hover{
+        background-color:magenta;
+    }
+    a:active{
+        background-color: aquamarine;
+    }
+    p:first-child{
+        color: goldenrod;
+    }
+</style>
+
+    <body>
+        <div>
+            Hello i am div.
+        </div>
+        <div>
+            <p>hello i am second div.
+
+            </p>
+
+        </div>
+        <div>
+            <main>
+                <p>hello i am third div.
+                    <p>this is another para</p>
+                </p>
+            </main>
+
+        </div>
+        <div class="mango">
+            this is div of mango class.
+        </div>
+        <main id="green">
+            this is main of green id.
+        </main>
+        <a target="_blank" href="http://www.google2.com">go to google</a>
+        <a target="_blank" href="http://www.wikipedia.com">visit wiki</a>
+
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scaling units in - HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+background-color: red;
+color: yellow;
+border: 5px solid black;
+box-sizing: border-box;
+width: 500px;
+height: 10vh;
+margin: auto;
+
+
+        }
+        .box2{
+            background-color: green;
+            color: aqua;
+            border: 4px solid pink;
+            width: 80vw;
+            /* height: 50vh; */
+            min-height: 80vh;
+            margin: 25px auto;
+        }
+        footer{
+            background-color: rgb(26, 76, 215);
+            color: rgb(255, 196, 0);
+            border: 4px solid rgb(43, 225, 7);
+            box-sizing: border-box;
+            width: 100vw;
+            height: 10vh;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        hello this is the start.
+    </div>
+    
+    <main class="box2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus reprehenderit error modi nostrum odit porro quaerat, dolor nulla, iure veniam! In odit facilis accusantium?
+        </p>
+        <!-- lorem500 we can extended our site by setting min height and width for the elements  -->
+    </main>
+    <footer>
+        <p>
+            we have reached the end.
+        </p>
+    </footer>
+
+</body>
+</html>

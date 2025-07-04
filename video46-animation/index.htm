@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-animation</title>
+    <style>
+        .container{
+            background-color: rgb(10, 106, 74);
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: rgb(216, 216, 115);
+            height: 10vh;
+            width: 10vh;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: anima 5s ease-in-out 2s 3 alternate-reverse  ;
+            text-align: center;
+            color: aquamarine;
+            
+        }
+
+        @keyframes anima {
+            from{
+                background-color: rgb(216, 216, 115);
+            height: 10vh;
+            width: 10vh;
+            }
+            to{
+                background-color: rgb(44, 155, 211);
+            height: 20vh;
+            width: 20vh;
+            transform: translateX(500px) translateY(100px);
+            color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

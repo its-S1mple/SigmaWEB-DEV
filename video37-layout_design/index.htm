@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Design</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Baloo+Da+2&family=Poppins&family=Silkscreen&display=swap');
+          </style>
+
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:gray;
+        }
+ 
+        
+        .layout{
+            position:relative;
+            background-color: bisque;
+        }
+    .nav{
+        border: 2px solid black;
+        height: 10vh;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(243, 152, 106);
+        color: aliceblue;
+        padding: 10px;
+    }
+    .nav p{
+        font-size: 35px;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+
+
+    }
+    .main{
+        border: 2px solid black;
+        height: 60vh;
+        margin: 10px;
+        background-color: rgb(87, 235, 134);
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* position: relative; */
+    }
+    .main span{
+        border: 2px solid black;
+      display: inline-block;
+      height: 50vh;
+      width: 20vw;
+      padding: 0px 40px;
+      margin: 18px;
+      background-color: rgb(136, 236, 236);
+      font-size: 40px;
+      font-family: 'Baloo Bhaijaan 2', sans-serif;
+      /* position:fixed; */
+
+      
+    }
+    .content{
+        border: 2px solid black;
+        height: 20vh;
+        border-radius: 80px;
+     margin: 100px 50px;
+     background-color: rgb(186, 164, 246);
+    
+    }
+    .content p{
+        font-size: 50px;
+        padding: 20px 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blueviolet;
+    }
+    .circle{
+    position: relative;
+    }
+    .circle img{
+        
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+    .footer{
+        border: 2px solid black;
+        height: 10vh;
+        margin-top: 50px;
+        background-color: rgb(84, 149, 241);
+    }
+.footer p{
+    font-size: 40px;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        /* padding: 10px; */
+        padding-left: 20px;
+        color: yellow;
+}
+    </style>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="nav">
+                <p>
+                    This is a sticky Navbar.
+                </p>
+            </div>
+            <div class="main">
+                <span>This</span>
+                <span>Is</span>
+                <span>Content</span>
+            </div>
+            <div class="content">
+                <p>This is sigma web development course
+
+                </p>
+
+            </div>
+            <div class="circle">
+                <img src="download.jpeg" alt width="100">
+            </div>
+            <div class="footer">
+                <p>
+                    This is the footer of the site.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

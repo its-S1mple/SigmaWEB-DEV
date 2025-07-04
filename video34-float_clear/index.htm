@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <!-- not really usuable nowadays -->
+    <style>
+        img{
+            /* float: right; */
+            float: left;
+            /* img will float on left and allow the remaining content on its right */
+            
+        }
+        .boxes{
+            border: 2px solid black;
+            /* overflow: auto; */
+            display: flow-root;
+        }
+.box{
+    border: 2px solid red;
+    margin-top:5px;
+}
+.box:nth-child(3){
+    background-color: violet;
+    /* clear: left; */
+    /* clear: both; */
+    clear: right;
+    /* allows the content to flow on left but not on right */
+}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <img src="images.jpeg" alt="">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ex. Quisquam, fuga iusto excepturi a eius aut dicta mollitia totam alias, vero dolore saepe ratione! Aut quos veniam fuga, nulla mollitia voluptate nihil labore commodi quam harum obcaecati ipsam accusamus libero culpa dolorem laborum fugiat.
+        </div>
+        <div class="box">
+            box2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem provident aliquam veritatis voluptatibus minus, non fuga et dolor voluptates? Eos officiis repudiandae modi, debitis accusantium labore, at voluptatem provident voluptas error omnis perspiciatis adipisci quas culpa! Adipisci iste soluta aut cumque recusandae quos pariatur necessitatibus ipsum repellat itaque sequi exercitationem incidunt fugit illum, consectetur ipsam, asperiores, expedita porro quasi. Rem, nihil. Reiciendis consequatur officiis at. Facere beatae similique commodi iste quasi! Sequi, quaerat ab. Cum odit voluptatum temporibus doloremque laborum! Eius architecto nostrum eum cupiditate animi sint dolores veniam, error porro itaque mollitia hic, eos, quo consectetur? Temporibus, et sequi!
+        </div>
+        <div class="box">
+            box3
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css- transfrom</title>
+    <style>
+        *{
+            padding: 50px;margin: 0;
+        }
+        .container{
+            height: 80vh;
+            width: 100%;
+            border:2px solid black;
+
+        }
+        .box{
+            height:100px;
+            width: 100px;
+            background-color: beige;
+            color: rgb(7, 212, 76);
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            /* transform:translate(100px); */
+            /* transform: skew(15deg); */
+            /* transform: scale(1.50); */
+            /* transform:skewy(30deg); */
+            /* transform: translateX(20%) translateY(40%) skew(30deg); */
+            transform-origin: -50% 0%;
+            /* transform: rotate(45deg); */
+            transform: rotateX(50deg) rotateY(45deg);
+          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="box">
+            <p>
+                box1
+            </p>
+
+        </nav>
+    </div>
+</body>
+</html>

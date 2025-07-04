@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color:rgb(83, 83, 241);
+            --secolor:rgb(204, 82, 225);
+            --defpad:5px;
+            --defm: 10px;
+
+        }
+.mast{
+    background-color: var(--color);
+    color: var(--secolor);
+    
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    border: 2px solid var(--secolor);
+    padding: var(--defpad);
+    margin:var(--defm);
+   
+   
+}
+ul li:first-child{
+    background-color: yellow;
+}
+.box{
+    background-color: var(--secolor);
+    color: var(--color)
+    /* margin: 5px; */
+}
+    </style>
+</head>
+<body>
+    <nav class="mast">
+        <ul>
+            <li>Home</li>
+            <li>Account</li>
+            <li>orders</li>
+            <li>Address</li>
+        </ul>
+    </nav>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque cum? Inventore, sequi maiores hic neque delectus quasi corporis suscipit dolores illo, cum ipsum facilis ut autem molestiae voluptate doloremque vel eius quo! Labore, facere laboriosam praesentium eligendi neque itaque aperiam nemo exercitationem recusandae accusantium.
+        </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading and Specifity</title>
+    <style>
+        /* this is element selector and it sspecifity is 1 */
+        div{
+            background-color: red;
+        }
+        /* this is class selector and it specifity is 10 */
+        .mango{
+            background-color: yellow;
+        }
+        .chilli{
+            background-color: rgb(28, 79, 229);
+         }  
+        /* if multiple class selector exists then position decide its specifity,whichever selectors comes afterwards its prop. are applied */
+        .sky{
+            color: skyblue;
+            font-size: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 5px solid rgb(198, 34, 231);
+        
+        }
+        /* order of specifity is:
+        inline style(1000)> id selector(100) > class selector (10)or attribute selector > element selector(1) >  */
+        /* even inline style can be overwrite by using important keyword after assigning properties */
+        /* we should avoid using using important keyword more often  */
+    </style>
+</head>
+<body>
+    <div class="mango chilli sky">
+       
+            I'm not done yet.
+        
+    </div>
+</body>
+</html>

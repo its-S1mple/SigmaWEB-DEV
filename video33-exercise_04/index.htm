@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>first site</title>
+        <style>
+        :root {
+            --color:rgb(255, 0, 119);
+            --secolor:rgb(136, 230, 65);
+
+        }
+        *{
+
+    padding: 0;
+    margin: 0;
+        }
+body{
+    background-color: rgb(201, 206, 241);
+    
+}
+.head{
+    background-color: var(--color);
+    color: var(--secolor);
+    border: 2px solid black;
+    height: 20vh;
+    font-size: 45px;
+    border: none;
+    
+    
+
+}
+.head p{
+    padding: 50px 20px;
+    font-style: italic;
+    border: none;
+}
+.main{
+    background-color:var(--color);
+    color: var(--secolor);
+    border: 2px solid black;
+    height: 30vh;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    position:relative;
+}
+.main p{
+    font-size: 50px;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top:20px;
+}
+.content{
+    display: flex;
+    padding:  0 10px;
+}
+.content span{
+    background-color: var(--color);
+    color:var(--secolor);
+    border: 2px solid black;
+    /* display: flex; */
+    margin: 5px;
+    width: 20vw;
+    height:30vh;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+span img{
+    width:200px;
+    height:20vh;
+    border-radius: 5px;
+}
+span p{
+    padding: 20px 10px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* .main p img{
+    width:150px;
+    height: 90px;
+    padding: 10px 150px; */
+.main span{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="head">
+            <p> Flipkart</p>
+
+        </div>
+        <div class="main">
+            <p>#Big Billions Day
+                <span>
+                    <img src="download (2).jpeg" alt="">
+                </span>
+                <!-- <img style="padding:20px 150px" margin="20px" width="150px"
+                   height="90px" src="download (2).jpeg" alt=""> -->
+            </p>
+
+        </div>
+        <div class="content">
+            <span>
+                <img src="download.jpeg" alt>
+                <p>
+
+                    Electronics
+                </p></span>
+            <span>
+                <img src="download (1).jpeg" alt>
+                <p>Fashion</p></span>
+            <span>
+                <img src="images.jpeg" alt>
+                <p>Appliances</p></span>
+            <span>
+                <img src="images (1).jpeg" alt>
+                <p>toys</p></span>
+        </div>
+
+    </body>
+</html>
